@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>タスク詳細</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+     rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+     crossorigin="anonymous">
+</head>
+<body class="container mt-5">
+<h2 class="mb-4 text-center">タスク詳細</h2>
+<div class="card">
+<div class="card-body">
+    <h5 class="card-title">タスクのタイトル</h5>
+    <p class="card-text">{{ task['title'] }}</p>
+
+    <h5 class="card-title">タスクの内容</h5>
+    <p class="card-text">{{ task['content'] }}</p>
+
+    <h5 class="card-title">期限</h5>
+    <p class="card-text">{{ task['due_date'] }}</p>
+
+    <h5 class="card-title">ステータス</h5>
+    <p class="card-text">{{ task['status'] }}</p>
+
+<a href="{{ url_for('index') }}" class="btn btn-primary title'mt-3">戻る</a>
+</div>
+</div>
+</body>
+</html>
